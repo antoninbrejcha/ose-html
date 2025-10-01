@@ -89,7 +89,7 @@ main {
   font-weight: 700;
   line-height: 120%;
 }
-.heading h5 {
+.heading h2 {
   max-width: var(--width-m, 540px);
   color: #404040;
   text-align: center;
