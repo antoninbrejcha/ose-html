@@ -1,0 +1,401 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+body > header {
+  display: flex;
+  height: 128px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-self: stretch;
+}
+.header-top,
+.header-bottom {
+  display: flex;
+  padding: 1rem 2rem;
+}
+.header-top {
+  justify-content: space-between;
+  align-items: center;
+  align-self: stretch;
+}
+.header-top div {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 2rem;
+  flex: 1 0 0;
+}
+.header-top div a {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  padding: 0.5rem 0;
+  gap: 1rem;
+}
+.header-icon {
+  display: flex;
+  align-items: center;
+}
+.header-top div a span {
+  color: black;
+  text-align: right;
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%;
+}
+.header-bottom {
+  align-items: center;
+  justify-content: center;
+  border-top: 1px solid rgb(0, 0, 0, 0.1);
+  align-self: stretch;
+}
+.header-bottom nav ul {
+  display: flex;
+  flex-direction: row;
+  gap: 3rem;
+}
+.header-bottom nav ul li a {
+  text-decoration: none;
+  color: black;
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%;
+}
+main {
+  display: flex;
+  padding: 4rem 10rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem;
+  align-self: stretch;
+  position: relative;
+}
+.rectangle {
+  width: 100%;
+  height: 557px;
+  position: absolute;
+  background: #e4f0fd;
+  z-index: -1;
+  top: 0px;
+}
+main > section {
+  display: flex;
+  max-width: 1215px;
+  flex-direction: column;
+  align-items: center;
+  gap: 7rem;
+  align-self: stretch;
+}
+.blog-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  align-self: stretch;
+}
+.breadcrumb ol {
+  display: flex;
+  gap: 2px;
+  align-self: stretch;
+}
+.breadcrumb ol li a {
+  color: #0c4789;
+  font-family: "Roboto", sans-serif;
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  text-decoration: none;
+}
+.breadcrumb ol li:nth-child(2) {
+  color: black;
+  font-family: "Roboto", sans-serif;
+  font-size: 0.8rem;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 150%;
+}
+.breadcrumb ol li:nth-child(2)::before {
+  content: ">";
+  padding: 0 0.25rem;
+  color: #0c4789;
+}
+.blog-header > div {
+  display: flex;
+  width: 572px;
+  height: 429px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 3rem;
+  transform: scale(0.9);
+}
+.blog-header > div > div {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1.5rem;
+  align-self: stretch;
+}
+.blog-header > div > div p time {
+  color: black;
+  font-family: "Roboto", sans-serif;
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+}
+.blog-header > div > div h1 {
+  color: #0c4789;
+  font-family: "Roboto", sans-serif;
+  font-size: 3rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%;
+  align-self: stretch;
+}
+.blog-header > div > div p:nth-child(3) {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.blog-header > div > div p:nth-child(3) span:first-child {
+  display: flex;
+  padding: 0.25rem 0.75rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.625rem;
+  border-radius: 20px;
+  background: #3c4d3f;
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+  font-size: 0.8rem;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 150%;
+}
+.blogheader figure {
+  display: flex;
+}
+.blog-header figure img {
+  aspect-ratio: 4/3;
+  object-fit: cover;
+  border-radius: 20px;
+  max-width: 572px;
+}
+.blog-content {
+  display: flex;
+  width: 668px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 2rem;
+}
+.blog-content > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  align-self: stretch;
+}
+.blog-content > div h2 {
+  color: black;
+  font-family: "Roboto", sans-serif;
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 120%;
+}
+.blog-content > div p:nth-child(2) {
+  color: #404040;
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%;
+}
+.blog-content > div ol {
+  display: flex;
+  padding-bottom: 1rem;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.5rem;
+  align-self: stretch;
+}
+.blog-content > div ol {
+  display: flex;
+  padding-bottom: 1rem;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.5rem;
+  align-self: stretch;
+}
+.blog-content > div ol:nth-child(3) {
+  list-style-type: decimal;
+  counter-reset: item;
+}
+.blog-content > div ol li,
+.blog-content > div p {
+  color: #404040;
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+}
+.blog-content > div h3 {
+  color: black;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 120%;
+}
+.image-container {
+  display: flex;
+  padding: 1.5rem 0;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1rem;
+  align-self: stretch;
+}
+.image-container img {
+  display: flex;
+  height: 375px;
+  justify-content: center;
+  align-items: center;
+  gap: 2px;
+  align-self: stretch;
+  aspect-ratio: 668/375;
+  border-radius: 20px;
+  object-fit: cover;
+}
+.blog-content > div figure figcaption {
+  color: #404040;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+}
+.blog-content > div h4 {
+  color: black;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 120%;
+}
+.blog-content > div ol:nth-child(9) {
+  list-style-type: disc;
+  counter-reset: item;
+}
+.blog-content > div h5 {
+  color: black;
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 120%;
+}
+.quote-container {
+  display: flex;
+  padding: 4rem;
+  justify-content: center;
+  align-items: center;
+  align-self: stretch;
+  border-radius: 20px;
+  background: #e4f0fd;
+  text-align: center;
+}
+.quote-container blockquote {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+.quote-container blockquote p,
+.quote-container cite {
+  color: #0c4789;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 150%;
+}
+.blog-content > div h6 {
+  color: black;
+  font-family: "Roboto", sans-serif;
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 120%;
+}
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  width: 100%;
+  gap: 4rem;
+}
+aside a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  text-decoration: none;
+}
+aside a span:first-child {
+  display: flex;
+  width: 18px;
+  padding: 8px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 4px;
+  border: 1px solid #0c4789;
+  background: rgba(12, 71, 137, 0.05);
+}
+aside a span:last-child {
+  color: black;
+  font-family: "Roboto", sans-serif;
+  font-size: 0.75rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 120%;
+}
+footer nav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  align-self: stretch;
+}
+footer nav {
+  width: 100%;
+}
+footer nav ul li a {
+  text-decoration: none;
+  display: flex;
+  width: 366px;
+  align-items: center;
+  gap: 0.25rem;
+  color: #0c4789;
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%;
+}
+footer nav ul li:first-child a {
+  justify-content: flex-start;
+}
+footer nav ul li:last-child a {
+  justify-content: flex-end;
+}
